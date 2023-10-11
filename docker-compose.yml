@@ -10,7 +10,7 @@ services:
       - DOCKER_DB_BOOTSTRAP=1
       - IRIS_API_HOST=iris
     volumes:
-      - ./configs/config.docker.yaml:/home/oncall/config/config.yaml
+      - /docker/oncall/config/config.docker.yaml:/home/oncall/config/config.yaml
     networks:
       - iris
   
